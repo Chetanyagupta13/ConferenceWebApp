@@ -31,9 +31,39 @@ export default function HeaderLinks(props) {
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
-					style={{fontSize:16}}
+					style={{ fontSize: 16 }}
 				>
-					HOME
+					<Link to="/home" style={{ textDecoration: "none" }}>HOME</Link>
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+					style={{ fontSize: 16 }}
+				>
+					<Link to="/committee" style={{ textDecoration: "none" }}>COMMITTEES</Link>
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+					style={{ fontSize: 16 }}
+				>
+					<Link to="/speaker" style={{ textDecoration: "none" }}>SPEAKERS</Link>
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+					style={{ fontSize: 16 }}
+				>
+					<Link to="/publication" style={{ textDecoration: "none" }}>PUBLICATION</Link>
 				</Button>
 			</ListItem>
 			<ListItem className={classes.listItem}>
@@ -64,17 +94,7 @@ export default function HeaderLinks(props) {
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
-					style={{fontSize:16}}
-				>
-					COMMITTEES
-				</Button>
-			</ListItem>
-			<ListItem className={classes.listItem}>
-				<Button
-					color="transparent"
-					target="_blank"
-					className={classes.navLink}
-					style={{fontSize:16}}
+					style={{ fontSize: 16 }}
 				>
 					REGISTRATION
 				</Button>
@@ -84,27 +104,7 @@ export default function HeaderLinks(props) {
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
-					style={{fontSize:16}}
-				>
-					WORKSHOP
-				</Button>
-			</ListItem>
-			<ListItem className={classes.listItem}>
-				<Button
-					color="transparent"
-					target="_blank"
-					className={classes.navLink}
-					style={{fontSize:16}}
-				>
-					SPONSORS
-				</Button>
-			</ListItem>
-			<ListItem className={classes.listItem}>
-				<Button
-					color="transparent"
-					target="_blank"
-					className={classes.navLink}
-					style={{fontSize:16}}
+					style={{ fontSize: 16 }}
 				>
 					CONTACT
 				</Button>

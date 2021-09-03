@@ -18,7 +18,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import { routes } from "routes";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
-import { faHome,faAtlas,faGlobe, faPhone} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faAtlas, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const useStyles = makeStyles(styles);
@@ -94,44 +94,45 @@ export default function Components(props) {
 								Contact Us
 							</p>
 							<div
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
-								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faHome} /></span></div>
+								style={{ textAlign: "center", margin: "10px", width: "70%" }}>
+								<div className="row">
+									<div className="col-sm-2"><span><FontAwesomeIcon icon={faHome} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted " }}>Secretary: Mr. Ranjeet </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>Secretary: Mr. Ranjeet </p></div></div>
 							</div>
 							<div
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faAtlas} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted " }}>abc@gmail.com </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>abc@gmail.com </p></div></div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faPhone} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted " }}>+91 99999999 </p></div></div>
+										<p style={{ borderBottom: "1px dotted", fontSize: "18px " }}>+91 99999999 </p></div></div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faPhone} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted " }}>+91 99999999 </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>+91 99999999 </p></div></div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faGlobe} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted " }}>
-											<a href="https://nitsri.ac.in/" >https://nitsri.ac.in/ </a>
-											</p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
+											<a href="https://nitsri.ac.in/" style={{ textDecoration: "none" }}>https://nitsri.ac.in/ </a>
+										</p></div></div>
 							</div>
 							<button class="list-group-item list-group-item-action"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px", marginTop:"20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px", marginTop: "20px" }}>
 								Latest News
 							</button>
 						</div>
 					</div>
-					<div className="col-sm-8">
+					<div className="col-sm-8" style={{paddingBottom:"30px"}}>
 						<Switch>
 							{routes.map((prop, key) => {
 								return (
