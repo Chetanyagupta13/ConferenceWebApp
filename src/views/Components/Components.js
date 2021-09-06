@@ -29,13 +29,12 @@ export default function Components(props) {
 	return (
 		<div>
 			<Header
-				brand="International Conference"
+				brand="AAIEP"
 				rightLinks={<HeaderLinks />}
 				fixed
-				color="transparent"
 				changeColorOnScroll={{
 					height: 400,
-					color: "white",
+					color: "",
 				}}
 				{...rest}
 			/>
@@ -44,10 +43,8 @@ export default function Components(props) {
 					<GridContainer>
 						<GridItem>
 							<div className={classes.brand}>
-								<h1 className={classes.title}>International Conference.</h1>
-								<h3 className={classes.subtitle}>
-									A Badass Material-UI Kit based on Material Design.
-								</h3>
+								<h2 className={classes.title}>Appliction of Artificial Intelligence in Engineering Problem</h2>
+
 							</div>
 						</GridItem>
 					</GridContainer>
@@ -55,7 +52,7 @@ export default function Components(props) {
 			</Parallax>
 
 			<div className={classNames(classes.main, classes.mainRaised)}>
-				<div className="row">
+				<div className="row" style={{ padding: "10px" }}>
 					<div className="col-sm-4">
 						<div className="list-group d-flex justify-content-center"
 							style={{
@@ -64,33 +61,33 @@ export default function Components(props) {
 								alignItems: "center"
 							}} >
 							<p class="list-group-item list-group-item-action active"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Conference Menu
 							</p>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Submit Contribution</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Listener Register Path</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Abstract Register Path</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Full Paper Register Path</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								AAIEP 2020 | online Conf.</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								AAIEP 2019 | India</button>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Join Us</button>
 
 							<p class="list-group-item list-group-item-action active"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px", marginTop: "30px" }}>
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "30px" }}>
 								Contact Us
 							</p>
 							<div
@@ -98,41 +95,63 @@ export default function Components(props) {
 								<div className="row">
 									<div className="col-sm-2"><span><FontAwesomeIcon icon={faHome} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>Secretary: Mr. Ranjeet </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
+											Secretary: Mr. Ranjeet
+										</p>
+									</div>
+								</div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%" }}>
-								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faAtlas} /></span></div>
+								<div className="row">
+									<div className="col-sm-2"><span><FontAwesomeIcon icon={faAtlas} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>abc@gmail.com </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
+											Email: <a href="mailto: abc@example.com" style={{ textDecoration: "none" }}>
+												abc@example.com
+											</a>
+										</p>
+									</div>
+								</div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faPhone} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted", fontSize: "18px " }}>+91 99999999 </p></div></div>
+										<p style={{ borderBottom: "1px dotted", fontSize: "18px " }}>
+											Phone: +91 99999999
+										</p>
+									</div>
+								</div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faPhone} /></span></div>
 									<div className="col-sm-10">
-										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>+91 99999999 </p></div></div>
+										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
+											Cell Phone: +91 99999999
+										</p>
+									</div>
+								</div>
 							</div>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontSize: "16px" }}>
 								<div className="row"><div className="col-sm-2"><span><FontAwesomeIcon icon={faGlobe} /></span></div>
 									<div className="col-sm-10">
 										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
-											<a href="https://nitsri.ac.in/" style={{ textDecoration: "none" }}>https://nitsri.ac.in/ </a>
-										</p></div></div>
+											Web: <a href="https://nitsri.ac.in/" style={{ textDecoration: "none" }}>
+												nitsri.ac.in/ </a>
+										</p>
+									</div>
+								</div>
 							</div>
 							<button class="list-group-item list-group-item-action"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "20px", marginTop: "20px" }}>
-								Latest News
+								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "20px" }}>
+								<Link to={"/latestnews"}>Latest News</Link>
 							</button>
 						</div>
 					</div>
-					<div className="col-sm-8" style={{paddingBottom:"30px"}}>
+					<div className="col-sm-8" style={{ paddingBottom: "30px" }}>
 						<Switch>
 							{routes.map((prop, key) => {
 								return (

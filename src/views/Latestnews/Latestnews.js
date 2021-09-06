@@ -9,7 +9,7 @@ export default () => (
         <div className="row">
             <div className="col-sm-5">
                 <p class="list-group-item list-group-item-action active"
-                    style={{ textAlign: "center", fontWeight: "bold", fontSize: "20px", marginTop: "10px" }}>
+                    style={{ textAlign: "center", fontWeight: "bold", fontSize: "22px", marginTop: "10px" }}>
                     Latest News
                 </p>
             </div>
