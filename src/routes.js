@@ -3,6 +3,9 @@
  import Speaker from "views/Speaker/Speaker";
  import Publication from "views/Publication/Publication";
  import Latestnews from "views/Latestnews/Latestnews";
+ import Agenda from "views/Agenda/Agenda";
+ import Venue from "views/Venue/Venue";
+ import Visit from "views/Visit/Visit";
 
  
  var routes = [
@@ -31,7 +34,21 @@
         name: "Latestnews",
         component: Latestnews,
     },
-     
+    {
+        path: "/agenda",
+        name: "Agenda",
+        component: Agenda,
+    }, 
+    {
+        path: "/venue",
+        name: "Venue",
+        component: Venue,
+    },
+    {
+        path: "/visit",
+        name: "Visit",
+        component: Visit,
+    },
  ];
  
  
