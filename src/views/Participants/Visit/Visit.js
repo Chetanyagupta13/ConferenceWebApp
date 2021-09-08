@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import srinagar from "../../assets/img/srinagar.jpg";
+import srinagar from "../../../assets/img/srinagar.jpg";
 
 export default () => (
     <div style={{ width: "80%" }}>

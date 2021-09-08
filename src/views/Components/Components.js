@@ -60,7 +60,7 @@ export default function Components(props) {
 								justifyContent: "center",
 								alignItems: "center"
 							}} >
-							<p class="list-group-item list-group-item-action active"
+							<p className="list-group-item list-group-item-action active"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Conference Menu
 							</p>
@@ -86,7 +86,7 @@ export default function Components(props) {
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Join Us</button>
 
-							<p class="list-group-item list-group-item-action active"
+							<p className="list-group-item list-group-item-action active"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "30px" }}>
 								Contact Us
 							</p>
@@ -145,9 +145,9 @@ export default function Components(props) {
 									</div>
 								</div>
 							</div>
-							<button class="list-group-item list-group-item-action"
+							<button className="list-group-item list-group-item-action"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "20px" }}>
-								<Link to={"/latestnews"}>Latest News</Link>
+								<Link to={"/latestnews"} style={{}}>Latest News</Link>
 							</button>
 						</div>
 					</div>
