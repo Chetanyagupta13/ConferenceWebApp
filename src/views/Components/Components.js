@@ -21,6 +21,14 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import { faHome, faAtlas, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "./Components.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+import NitSrinagarImage from "../../assets/img/nit_image.jpg";
+import AIImage from "../../assets/img/ai_image.jpg";
+import AIImage2 from "../../assets/img/ai_image2.jpg";
+
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -37,8 +45,9 @@ export default function Components(props) {
 					color: "",
 				}}
 				{...rest}
+				style={{ backgroundColor: "red" }}
 			/>
-			<Parallax image={require("assets/img/nit_image.jpg").default}>
+			{/* <Parallax image={require("assets/img/nit_image.jpg").default}>
 				<div className={classes.container}>
 					<GridContainer>
 						<GridItem>
@@ -49,8 +58,113 @@ export default function Components(props) {
 						</GridItem>
 					</GridContainer>
 				</div>
-			</Parallax>
+			</Parallax> */}
+			<Carousel
+				width="100%"
+			infiniteLoop={true}
+			showThumbs={false}
+			interval={3000}
+			showArrows={false}
+			emulateTouch={true}
+			autoPlay={true}
+			>
+				<div>
+					<img src={AIImage} />
+					<div style={{
+						position: "fixed",
+						top: "200px",
+						width: "90%",
 
+					}}>
+						<h2 style={{ color: "white" }} className={classes.title}>
+							Appliction of Artificial Intelligence in Engineering Problem.
+						</h2>
+					</div>
+					<div style={{
+						position: "fixed",
+						top: "500px",
+						width: "40%",
+
+					}}>
+						<h5 style={{ color: "white", fontSize: "40px", margin: "0px", position: "relative", left: "20px" }} >
+							<i>AAIEP 2021</i>
+						</h5>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>The 5th International conference on Advances of AI</i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i><strike>NIT Srinagar, Jammu & kashmir</strike></i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>Virtual Conference</i>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src={NitSrinagarImage} />
+					<div style={{
+						position: "fixed",
+						top: "200px",
+						width: "90%",
+
+					}}>
+						<h2 style={{ color: "white" }} className={classes.title}>
+							Appliction of Artificial Intelligence in Engineering Problem.
+						</h2>
+					</div>
+					<div style={{
+						position: "fixed",
+						top: "500px",
+						width: "40%",
+
+					}}>
+						<h5 style={{ color: "white", fontSize: "40px", margin: "0px", position: "relative", left: "20px" }} >
+							<i>AAIEP 2021</i>
+						</h5>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>The 5th International conference on Advances of AI</i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i><strike>NIT Srinagar, Jammu & kashmir</strike></i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>Virtual Conference</i>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src={AIImage2} />
+					<div style={{
+						position: "fixed",
+						top: "200px",
+						width: "90%",
+
+					}}>
+						<h2 style={{ color: "white" }} className={classes.title}>
+							Appliction of Artificial Intelligence in Engineering Problem.
+						</h2>
+					</div>
+					<div style={{
+						position: "fixed",
+						top: "500px",
+						width: "40%",
+
+					}}>
+						<h5 style={{ color: "white", fontSize: "40px", margin: "0px", position: "relative", left: "20px" }} >
+							<i>AAIEP 2021</i>
+						</h5>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>The 5th International conference on Advances of AI</i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i><strike>NIT Srinagar, Jammu & kashmir</strike></i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>Virtual Conference</i>
+						</p>
+					</div>
+				</div>
+			</Carousel>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className="row" style={{ padding: "10px" }}>
 					<div className="col-sm-4">
@@ -66,29 +180,52 @@ export default function Components(props) {
 							</p>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								Submit Contribution</button>
+								<Link to="/submitnow" style={{ textDecoration: "none" }}>
+									Submit Contribution
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to="/Listener" style={{ textDecoration: "none" }}>Listener Register Path</Link></button>
+								<Link to="/Listener" style={{ textDecoration: "none" }}>
+									Listener Register Path
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								Abstract Register Path</button>
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									Abstract Register Path
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								Full Paper Register Path</button>
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									Full Paper Register Path
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								AAIEP 2020 | online Conf.</button>
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									AAIEP 2020 | online Conf.
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								AAIEP 2019 | India</button>
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									AAIEP 2019 | India
+								</Link>
+							</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								Join Us</button>
-
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									Join Us
+								</Link>
+							</button>
 							<p className="list-group-item list-group-item-action active"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "30px" }}>
-								Contact Us
+
+								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+									Contact Us
+								</Link>
 							</p>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%" }}>
@@ -147,7 +284,9 @@ export default function Components(props) {
 							</div>
 							<button className="list-group-item list-group-item-action"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "20px" }}>
-								<Link to={"/latestnews"} style={{}}>Latest News</Link>
+								<Link to={"/latestnews"} style={{ textDecoration: "none" }}>
+									Latest News
+								</Link>
 							</button>
 						</div>
 					</div>

@@ -12,7 +12,7 @@ export default () => (
             </div>
         </div>
         <div className="row">
-            <p style={{ marginLeft: "10px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "10px", fontSize: "14px" }}>
             Neither full paper publication, nor abstract presentation, you can register as listener to attend the conference directly. 
             </p>
         </div>
@@ -25,7 +25,7 @@ export default () => (
             </div>
         </div>
         <div className="row">
-            <p style={{ marginLeft: "10px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "10px", fontSize: "14px" }}>
             <span style={{color:"orange"}}>Normal participants:</span> 320 USD<br/>
             <span style={{color:"blue"}}>Normal participants Online Listener:</span> 80 USD<br/>
             <span style={{color:"orange"}}>Student participants:</span> 280 USD<br/>
@@ -45,7 +45,7 @@ export default () => (
             </div>
         </div>
         <div className="row">
-            <p style={{ marginLeft: "10px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "10px", fontSize: "14px" }}>
                 <ul>
                     <li>Download <span style={{color:"blue"}}>Registration form here</span></li>
                     <li>Fill the form and <span style={{color:"orange"}}>make payment,</span></li>
@@ -64,7 +64,7 @@ export default () => (
             </div>
         </div>
         <div className="row">
-            <p style={{ marginLeft: "10px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "10px", fontSize: "14px" }}>
                 <ul>
                     <li>Admission to all sessions</li>
                     <li>Certificate, Name tag, Conference bag, Souvenir</li>
@@ -83,10 +83,10 @@ export default () => (
             </div>
         </div>
         <div className="row">
-            <p style={{ marginLeft: "10px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "10px", fontSize: "14px" }}>
             If a registrant is unable to attend an event for any reason, they may substitute, by arrangement with the registrar, someone else of Co-authors or from the same institute/organization. Written requests for cancellations must be sent to Conference Secretary.
             </p>
-            <table style={{ marginLeft: "20px", fontSize: "16px", border:"1px solid gery", marginBottom: "8px"}}>
+            <table style={{ marginLeft: "20px", fontSize: "14px", border:"1px solid gery", marginBottom: "8px"}}>
                 <thead style={{ border:"1px solid grey"}}>
                     <tr>
                         <td style={{ border:"1px solid grey"}}><b>Time</b></td>
@@ -112,7 +112,7 @@ export default () => (
                     </tr>
                 </tbody>
             </table>
-            <p style={{ marginLeft: "px", fontSize: "16px" }}>
+            <p style={{ marginLeft: "px", fontSize: "14px" }}>
                 <ul>
                     <li>Personal Reason</li>
                 </ul>
