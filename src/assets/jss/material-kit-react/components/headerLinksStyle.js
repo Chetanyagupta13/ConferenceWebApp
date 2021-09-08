@@ -44,7 +44,7 @@ const headerLinksStyle = (theme) => ({
     fontSize: "16px",
     textTransform: "uppercase",
     borderRadius: "3px",
-    lineHeight: "20px",
+    lineHeight: "30px",
     textDecoration: "none",
     margin: "0px",
     display: "inline-flex",

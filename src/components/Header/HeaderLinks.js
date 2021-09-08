@@ -27,56 +27,57 @@ export default function HeaderLinks(props) {
 	return (
 		<List className={classes.list}>
 			<ListItem className={classes.listItem}>
-				<Button
+			<Link to="/home" style={{ textDecoration: "none", color:"#555555"  }}><Button
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
 					style={{ fontSize: 16 }}
 				>
-					<Link to="/home" style={{ textDecoration: "none" }}>HOME</Link>
-				</Button>
+					HOME
+				</Button></Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button
+			<Link to="/committee" style={{ textDecoration: "none", color:"#555555" }}><Button
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
-					style={{ fontSize: 16 }}
+					style={{ fontSize: 16, }}
 				>
-					<Link to="/committee" style={{ textDecoration: "none" }}>COMMITTEES</Link>
-				</Button>
+					COMMITTEES
+				</Button></Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button
+			<Link to="/speaker" style={{ textDecoration: "none", color:"#555555"  }}><Button
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
 					style={{ fontSize: 16 }}
 				>
-					<Link to="/speaker" style={{ textDecoration: "none" }}>SPEAKERS</Link>
-				</Button>
+					SPEAKERS
+				</Button></Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button
+			<Link to="/publication" style={{ textDecoration: "none", color:"#555555"  }}><Button
 					color="transparent"
 					target="_blank"
 					className={classes.navLink}
 					style={{ fontSize: 16 }}
 				>
-					<Link to="/publication" style={{ textDecoration: "none" }}>PUBLICATION</Link>
-				</Button>
+					PUBLICATION
+				</Button></Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				<CustomDropdown
 					noLiPadding
 					buttonText="CALL FOR PAPERS"
+					
 					buttonProps={{
 						className: classes.navLink,
 						color: "transparent",
 					}}
 					buttonIcon={Apps}
 					dropdownList={[
-						<Link to="/scopes" className={classes.dropdownLink}>
+						<Link to="/scopes" className={classes.dropdownLink} >
 							SCOPES
 						</Link>,
 						<Link to="/importantdates" className={classes.dropdownLink}>

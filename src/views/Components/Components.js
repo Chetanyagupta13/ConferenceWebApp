@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
-import { Link, Switch, Route } from "react-router-dom";
+import { Link, Switch, Route, Redirect } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -47,59 +47,16 @@ export default function Components(props) {
 				{...rest}
 				style={{ backgroundColor: "red" }}
 			/>
-			{/* <Parallax image={require("assets/img/nit_image.jpg").default}>
-				<div className={classes.container}>
-					<GridContainer>
-						<GridItem>
-							<div className={classes.brand}>
-								<h2 className={classes.title}>Appliction of Artificial Intelligence in Engineering Problem</h2>
-
-							</div>
-						</GridItem>
-					</GridContainer>
-				</div>
-			</Parallax> */}
 			<Carousel
 				width="100%"
-			infiniteLoop={true}
-			showThumbs={false}
-			interval={3000}
-			showArrows={false}
-			emulateTouch={true}
-			autoPlay={true}
+				infiniteLoop={true}
+				showThumbs={false}
+				interval={4000}
+				showArrows={false}
+				emulateTouch={true}
+				autoPlay={true}
+				stopOnHover={false}
 			>
-				<div>
-					<img src={AIImage} />
-					<div style={{
-						position: "fixed",
-						top: "200px",
-						width: "90%",
-
-					}}>
-						<h2 style={{ color: "white" }} className={classes.title}>
-							Appliction of Artificial Intelligence in Engineering Problem.
-						</h2>
-					</div>
-					<div style={{
-						position: "fixed",
-						top: "500px",
-						width: "40%",
-
-					}}>
-						<h5 style={{ color: "white", fontSize: "40px", margin: "0px", position: "relative", left: "20px" }} >
-							<i>AAIEP 2021</i>
-						</h5>
-						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
-							<i>The 5th International conference on Advances of AI</i>
-						</p>
-						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
-							<i><strike>NIT Srinagar, Jammu & kashmir</strike></i>
-						</p>
-						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
-							<i>Virtual Conference</i>
-						</p>
-					</div>
-				</div>
 				<div>
 					<img src={NitSrinagarImage} />
 					<div style={{
@@ -164,8 +121,43 @@ export default function Components(props) {
 						</p>
 					</div>
 				</div>
+				<div>
+					<img src={AIImage} />
+					<div style={{
+						position: "fixed",
+						top: "200px",
+						width: "90%",
+
+					}}>
+						<h2 style={{ color: "white" }} className={classes.title}>
+							Appliction of Artificial Intelligence in Engineering Problem.
+						</h2>
+					</div>
+					<div style={{
+						position: "fixed",
+						top: "500px",
+						width: "40%",
+
+					}}>
+						<h5 style={{ color: "white", fontSize: "40px", margin: "0px", position: "relative", left: "20px" }} >
+							<i>AAIEP 2021</i>
+						</h5>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>The 5th International conference on Advances of AI</i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i><strike>NIT Srinagar, Jammu & kashmir</strike></i>
+						</p>
+						<p style={{ color: "white", fontSize: "26px", margin: "0px" }} >
+							<i>Virtual Conference</i>
+						</p>
+					</div>
+				</div>
 			</Carousel>
-			<div className={classNames(classes.main, classes.mainRaised)}>
+			<div
+				className={classNames(classes.main, classes.mainRaised)}
+				style={{ wordSpacing: "0.1em", lineHeight: "2em", fontWeight:"normal" }}
+			>
 				<div className="row" style={{ padding: "10px" }}>
 					<div className="col-sm-4">
 						<div className="list-group d-flex justify-content-center"
@@ -175,57 +167,70 @@ export default function Components(props) {
 								alignItems: "center"
 							}} >
 							<p className="list-group-item list-group-item-action active"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
+								style={{ textAlign: "center", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Conference Menu
 							</p>
+							<Link to="/submitnow" style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to="/submitnow" style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center", width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									Submit Contribution
-								</Link>
 							</button>
+								</Link>
+								<Link to="/Listener" style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to="/Listener" style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center", width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									Listener Register Path
-								</Link>
+								
 							</button>
+							</Link>
+							<Link to={"/Listener"} style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center", width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									Abstract Register Path
-								</Link>
+								
 							</button>
+							</Link>
+							<Link to={"/Listener"} style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center",  width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									Full Paper Register Path
-								</Link>
+								
 							</button>
+							</Link>
+							<Link to={"/Listener"} style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center",  width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									AAIEP 2020 | online Conf.
-								</Link>
+								
 							</button>
+							</Link>
+							<Link to={"/Listener"} style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center",  width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									AAIEP 2019 | India
-								</Link>
+								
 							</button>
+							</Link>
+							<Link to={"/Listener"} style={{ textDecoration: "none", width:"70%" }}>
 							<button type="button" className="list-group-item list-group-item-action border"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center",  width: "100%", fontWeight: "bold", fontSize: "22px" }}>
+								
 									Join Us
-								</Link>
+								
 							</button>
+							</Link>
 							<p className="list-group-item list-group-item-action active"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "30px" }}>
+								style={{ textAlign: "center",  width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "30px" }}>
 
-								<Link to={"/Listener"} style={{ textDecoration: "none" }}>
+								
 									Contact Us
-								</Link>
+								
 							</p>
 							<div
 								style={{ textAlign: "center", margin: "10px", width: "70%" }}>
@@ -282,12 +287,14 @@ export default function Components(props) {
 									</div>
 								</div>
 							</div>
+							<Link to={"/latestnews"} style={{ textDecoration: "none", width:"70%" }}>
 							<button className="list-group-item list-group-item-action"
-								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px", marginTop: "20px" }}>
-								<Link to={"/latestnews"} style={{ textDecoration: "none" }}>
+								style={{ textAlign: "center", width: "100%", fontWeight: "bold", fontSize: "22px", marginTop: "20px" }}>
+								
 									Latest News
-								</Link>
+								
 							</button>
+							</Link>
 						</div>
 					</div>
 					<div className="col-sm-8" style={{ paddingBottom: "30px" }}>
@@ -301,6 +308,9 @@ export default function Components(props) {
 									/>
 								);
 							})}
+							<Route path="/"  component={Components}>
+								<Redirect to="/home"/>
+							</Route>
 						</Switch>
 					</div>
 				</div>
