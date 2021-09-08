@@ -69,7 +69,7 @@ export default function Components(props) {
 								Submit Contribution</button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
-								Listener Register Path</button>
+								<Link to="/Listener" style={{ textDecoration: "none" }}>Listener Register Path</Link></button>
 							<button type="button" className="list-group-item list-group-item-action border"
 								style={{ textAlign: "center", margin: "10px", width: "70%", fontWeight: "bold", fontSize: "22px" }}>
 								Abstract Register Path</button>
