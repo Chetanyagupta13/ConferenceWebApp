@@ -6,6 +6,7 @@
  import Agenda from "views/Agenda/Agenda";
  import Venue from "views/Venue/Venue";
  import Visit from "views/Visit/Visit";
+ import Listener from "views/Listener/Listener";
 
  
  var routes = [
@@ -48,6 +49,11 @@
         path: "/visit",
         name: "Visit",
         component: Visit,
+    },
+    {
+        path: "/listener",
+        name: "Listener",
+        component: Listener
     },
  ];
  
