@@ -26,8 +26,8 @@ import "./Components.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 import NitSrinagarImage from "../../assets/img/nit_image.jpg";
-import AIImage from "../../assets/img/ai_image.jpg";
-import AIImage2 from "../../assets/img/ai_image2.jpg";
+import AIImage from "../../assets/img/ai_image6.jpg";
+import AIImage2 from "../../assets/img/ai_image3.jpg";
 
 const useStyles = makeStyles(styles);
 
