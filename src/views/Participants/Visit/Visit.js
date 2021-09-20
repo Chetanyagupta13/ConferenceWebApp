@@ -1,20 +1,16 @@
 import React from "react";
 import { Button } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Carousel from "react-slick";
-// material-ui components
-// @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
-// core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import './Visit.css';
 
+import srinagar from "../../../assets/img/landscape-2176347.jpg";
+import Dallake from "../../../assets/img/landscape-2176348.jpg";
+import TulipGarden from "../../../assets/img/2698568.jpg";
+import BotanicalGarden from "../../../assets/img/rainbow-4375505.jpg";
+import Moutain from "../../../assets/img/mountains-2691172.jpg";
 
-import srinagar from "../../../assets/img/srinagar.jpg";
-import Dallake from "../../../assets/img/dallake.jpg";
-import TulipGarden from "../../../assets/img/tulipgarden.jpg";
-import BotanicalGarden from "../../../assets/img/botanicalgarden.jpg";
 
 const settings = {
     dots: true,
@@ -41,67 +37,32 @@ export default () => (
             justifyContent: "center",
             alignItems: "center"
         }}>
-            <GridContainer>
-                <GridItem xs={12} sm={12} md={12}>
-                    <Card>
-                        <Carousel {...settings}>
-                            <div>
-                                <img
-                                    src={srinagar}
-                                    alt="First slide"
-                                    className="slick-image"
-                                />
-                                <div className="slick-caption">
-                                    <h4>
-                                        <LocationOn className="slick-icons" />
-                                        Somewhere, Kashmir
-                                    </h4>
-                                </div>
-                            </div>
-                            <div>
-                                <img
-                                    src={Dallake}
-                                    alt="Second slide"
-                                    className="slick-image"
-                                />
-                                <div className="slick-caption">
-                                    <h4>
-                                        <LocationOn className="slick-icons" />
-                                        DalLake, Srinagar, kashmir
-                                    </h4>
-                                </div>
-                            </div>
-                            <div>
-                                <img
-                                    src={TulipGarden}
-                                    alt="Third slide"
-                                    className="slick-image"
-                                />
-                                <div className="slick-caption">
-                                    <h4>
-                                        <LocationOn className="slick-icons" />
-                                        Tulip garden, Srinagar, kashmir
-                                    </h4>
-                                </div>
-                            </div>
-                            <div>
-                                <img
-                                    src={BotanicalGarden}
-                                    alt="Third slide"
-                                    className="slick-image"
-                                />
-                                <div className="slick-caption">
-                                    <h4>
-                                        <LocationOn className="slick-icons" />
-                                        Botanical garden, Srinagar, kashmir
-                                    </h4>
-                                </div>
-                            </div>
-                        </Carousel>
-                    </Card>
-                </GridItem>
-            </GridContainer>
-        </div>
+            <Carousel
+                infiniteLoop={true}
+                showThumbs={false}
+                interval={4000}
+                showArrows={false}
+                emulateTouch={true}
+                autoPlay={true}
+                stopOnHover={false}
+            >
+                <div>
+                    <img src={srinagar}/>
+                </div>
+                <div>
+                    <img src={Dallake}/>
+                </div>
+                <div>
+                    <img src={TulipGarden}/>
+                </div>
+                <div>
+                    <img src={BotanicalGarden}/>
+                </div>
+                <div>
+                    <img src={Moutain}/>
+                </div>
+            </Carousel>
+        </div >
         <div className="row">
             <ol>
                 <li>
@@ -130,5 +91,5 @@ export default () => (
                 </li>
             </ol>
         </div>
-    </div>
+    </div >
 );

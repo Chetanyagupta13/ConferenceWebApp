@@ -238,7 +238,7 @@ export default function Components(props) {
 									<div className="col-sm-2"><span><FontAwesomeIcon icon={faHome} /></span></div>
 									<div className="col-sm-10">
 										<p style={{ borderBottom: "1px dotted ", fontSize: "18px" }}>
-											Secretary: Mr. Ranjeet
+											Secretary: Dr. Ranjeet
 										</p>
 									</div>
 								</div>
